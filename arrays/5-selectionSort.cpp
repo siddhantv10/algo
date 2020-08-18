@@ -1,3 +1,5 @@
+//swapping the numbers if latter if smaller than the former
+//fixing it from the start
 #include<bits/stdc++.h>
 using namespace std;
 
