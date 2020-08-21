@@ -2,18 +2,15 @@
 using namespace std;
 
 void kadane(int*a , int n){
-    int cs =0;
-    int ms = 0;
+    int localSum =a[0];
+    int globalSum = a[0];
 
-    for(int i=0; i<n; i++){
-        cs += a[i];
-        if(cs < 0){     //IMP if cs goes lower than 0, reset it
-            cs =0;
-        }
-        ms = max(cs, ms);
+    for(int i=1; i<n; i++){
+        localSum = max(a[i], a[i]+localSum);
+        globalSum = max(localSum, globalSum);
     }
 
-    cout<<ms<<endl;
+    cout<<globalSum<<endl;
 }
 
 int main(){
