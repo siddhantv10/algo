@@ -15,7 +15,7 @@ int main(){
         power *= 10;
     }
 
-    while(power>0){
+    while(power>0){             //IMPORTANT to use POWER in while condition
         cout<<n/power<<endl;
         n = n%power;
         power /= 10;
