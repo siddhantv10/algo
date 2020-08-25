@@ -7,18 +7,21 @@ int main(){
 
     cin>>n;
 
+    int sp = 0;
+    int st = n;
     for(int i=1; i<=n; i++){
         
-        for(int k=1; k<i; k++){
+        for(int k=0; k<sp; k++){
             cout<<"\t";
         }
 
-        for(int j=n-i+1; j>0; j--){
+        for(int j=1; j<=st; j++){
             cout<<"*\t";
         }
 
         
-
+        sp++;
+        st--;
         cout<<endl;
     }
 
