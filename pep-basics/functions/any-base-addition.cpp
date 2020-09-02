@@ -1,14 +1,16 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-long int anyBaseAddition(int n, long int a, long int b){
+long int anyBaseAddition(int n, long int a, long int b)
+{
 
-   long int res = 0;
+    long int res = 0;
 
     int c = 0;
     int p = 1;
 
-    while(a>0 or b>0 or c>0){
+    while (a > 0 or b > 0 or c > 0)
+    {
         int d1 = a % 10;
         int d2 = b % 10;
 
@@ -20,22 +22,22 @@ long int anyBaseAddition(int n, long int a, long int b){
         d = d % n;
 
         res += d * p;
-        p*= 10;
-        
+        p *= 10;
     }
 
-   return res;
+    return res;
 }
 
-int main(){
+int main()
+{
     int n;
-    cin>>n;
+    cin >> n;
 
     long int a, b;
-    cin>>a>>b;
+    cin >> a >> b;
 
-    long int x = anyBaseAddition(n,a,b);
-    cout<<x<<endl;
+    long int x = anyBaseAddition(n, a, b);
+    cout << x << endl;
 
     return 0;
 }
