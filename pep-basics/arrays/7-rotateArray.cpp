@@ -21,20 +21,9 @@
 
         r = r % n;
 
-        while (r < 0)
-        {
-            r = r + n;
-        }
-
-        while (r--)
-        {
-            // int temp = a[n-1];
-
-            for (int i = 1; i < n; i++)
-            {
-                swap(a[0], a[i]);
-            }
-        }
+        reverse(a, a+n-r);
+        reverse(a+n-r, a+n);
+        reverse(a, a+n);
 
         for (int i = 0; i < n; i++)
         {
