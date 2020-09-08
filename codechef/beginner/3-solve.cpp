@@ -21,22 +21,12 @@ typedef pair< int ,int > pii;
  
 int main() 
 {
-ios::sync_with_stdio(0);
-cin.tie(0);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
  
- vi V;
-int x,n;
-
-sd(n);
- for(int i =0; i<n; i++){
-     sd(x);
-     V.PB(x);
- }
- for(int i=0; i<V.size(); i++){
-     cout<<V[i]<<" ";
- }
+    
  
  
-return 0;
+    return 0;
    
 }
