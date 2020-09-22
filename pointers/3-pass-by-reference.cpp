@@ -7,7 +7,7 @@ void increment(int x){
 }
 
 void increment(int *x){
-    *x = *x + 1;;
+    *x = *x + 1;
     cout<<"Inside pass by reference function: "<<*x<<endl;
 
 }
