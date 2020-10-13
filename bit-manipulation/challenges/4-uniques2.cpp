@@ -17,7 +17,7 @@ int main()
         exor ^= a[i];
     }
 
-    int rightmostSetBit = exor & ~(exor - 1);   //shortcut to find rightmost set bit
+    int rightmostSetBit = exor & ~(exor - 1);
     int x = 0, y = 0;
     for (int i = 0; i < n; i++)
     {

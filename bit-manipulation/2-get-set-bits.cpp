@@ -31,6 +31,10 @@ int clearBit(int n, int i)
     return n & mask;
 }
 
+int rightmostSetBit(n){
+    return n & ~(n-1);
+}
+
 //clear the bit first and then update it
 int updateBit(int n, int i, int v)
 {

@@ -13,8 +13,7 @@ int main()
 
         int j=0;
         while(no>0){
-            int last_bit = no&1;
-            count[j] += last_bit;
+            count[j] += no&1;
 
             j++;
             no = no>>1;
@@ -28,7 +27,7 @@ int main()
         ans = ans + (count[i]*p);
         p = p<<1;
     }
-
+        
     cout<<ans<<endl;
     return 0;
 }
