@@ -17,7 +17,7 @@ int main()
 
     a.pop_back(); //O(1) Removes the last element
 
-    a.insert(a.begin() + 3, 3, 77); //O(N) Inserts 4 elements at the 3rd index with value 77
+    a.insert(a.begin() + 3, 3, 77); //O(N) Inserts 3 elements at the 3rd index with value 77
 
     //1 2 3 77 77 77 77 4 5
 
